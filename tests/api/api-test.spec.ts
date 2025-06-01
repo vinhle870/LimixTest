@@ -5,7 +5,7 @@ test.describe('API Test Suite', () => {
     test('Send POST Request to /v1/profile', async ({ request }) => {
         const apiBaseUrl = process.env.API_BASE_URL;
 
-        logger.info(`Sending POST request to ${apiBaseUrl}/v1/profile`);
+        logger.info(`TC_API_1.1: Sending POST request to ${apiBaseUrl}/v1/profile`);
         const reqBody = {
             username: 'alice.smith',
             dateOfBirth: '1992-05-20T00:00:00Z',
@@ -26,7 +26,7 @@ test.describe('API Test Suite', () => {
         test.expect(responseBody).toEqual({ userId: 123 });
     });
 
-    test('Send GET Request to /v1/profile/:userId', async ({ request }) => {
+    test('TC_API_1.2: Send GET Request to /v1/profile/:userId', async ({ request }) => {
         const userId = 123;
         const apiBaseUrl = process.env.API_BASE_URL;
         logger.info(`Sending GET request to ${apiBaseUrl}/v1/profile/${userId}`);
