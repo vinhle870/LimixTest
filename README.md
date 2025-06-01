@@ -107,10 +107,5 @@ export const logger = createLogger({
 
 ---
 
-## Contributions
-Contributions are welcome! Please follow the guidelines in `CONTRIBUTING.md` to submit issues or pull requests.
-
----
-
 ## License
 This framework is licensed under the ISC License. See `LICENSE` for more details.
