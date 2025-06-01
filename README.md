@@ -85,7 +85,7 @@ export const logger = createLogger({
         ```
 
 ### Run via CICD
-1. Configure the pipeline in your CICD tool (e.g., Jenkins, GitHub Actions).
+1. Configure the pipeline in your CICD tool (e.g. GitHub Actions).
 2. Ensure the environment variables are set correctly in the pipeline configuration.
 3. Trigger the pipeline to execute tests automatically using:
     ```bash
