@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                  // Use modern JS
+    "module": "CommonJS",                // Compatible with Node.js
+    "lib": ["ES2020", "DOM"],            // Include browser + Node APIs
+    "rootDir": "./",                         // Root of all TS files
+    "outDir": "dist",                    // Where compiled JS will go
+    "moduleResolution": "node",          // Resolve using node_modules
+    "esModuleInterop": true,             // Allow `import express from 'express'`
+    "resolveJsonModule": true,           // Allow importing .json files
+    "strict": true,                      // Enable strict type checking
+    "skipLibCheck": true,                // Skip type checks in node_modules
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node", "playwright"]      // Include Node.js and Playwright types
+  },
+  "include": [
+    "src/**/*",                      // Your mock server or utils
+    "tests/**/*.ts",                    // Playwright tests
+    "playwright.config.ts"              // Config file for Playwright
+  ],
+  "exclude": ["node_modules"]
+}
