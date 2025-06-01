@@ -7,6 +7,7 @@ This framework is designed for automated testing of APIs and UIs, with support f
 
 ## Structure of Framework
 The framework is organized as follows:
+- **profile/**: Contains the .env for executed environment (e.g, .env.qa)
 - **src/**: Contains the core source code for the framework, including utilities, fixtures, and page objects.
 - **tests/**: Includes test cases for API and UI testing.
 - **mocks/**: Contains mock server configurations and data.
@@ -70,7 +71,10 @@ export const logger = createLogger({
     ```bash
     npm install
     ```
-2. Start the mock server:
+2. Ensure file .env is avaialble with variables below:
+    - BASE_URL=https://ultimateqa.com/simple-html-elements-for-automation
+    - API_BASE_URL=http://localhost:3000
+2. Start the mock server (for API testing only)
     ```bash
     npx tsx ./src/mock-server/server.ts
     ```
